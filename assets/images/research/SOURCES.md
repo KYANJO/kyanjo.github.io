@@ -1,0 +1,23 @@
+# Research figure sources
+
+The figure files are byte-for-byte copies from Brian Kyanjo's supplied archives. No scientific panels, labels, colors, or values have been modified. The website uses proportional scaling and links to the full image.
+
+| Website asset | Original archive and member |
+| --- | --- |
+| `geoflood-adaptive-mesh.png` | `dissertation.zip` → ` Developing a computational model for Overland Flooding.zip` → `Dissertation_proposal/images/amr_20.png` |
+| `icesee-thickness-grounding-line.png` | `ICESEE.zip` → `icesee_paper/images/GL_geometry_thickness.png` |
+| `icesee-state-parameter-estimation.png` | `ICESEE.zip` → `icesee_paper/images/husmb_true_diff.png` |
+
+Local source folder: `/Users/bkyanjo3/geoflood-project/papers`.
+Captions were checked against `Dissertation_proposal/proposal.tex` and `icesee_paper/icesee.tex`. No time is inferred for the standalone dissertation mesh image. The ICESEE captions summarize the manuscript's corresponding figure captions.
+
+To update a figure, replace the website asset with the same filename and update the relevant captions and alternative text. Keep complete axes, legends, and color bars visible. The original archives remain unchanged.
+
+
+## Added flood maps and portrait
+
+- `malpasset-flood-google-earth.png`: byte-for-byte copy of `Dissertation_proposal/images/ggle_2800.png` in the nested dissertation archive. The dissertation caption identifies Malpasset and the time as 2,800 seconds. This is not a Missoula result. Google Earth imagery attribution is preserved within the image.
+- `teton-flood-google-earth.png`: byte-for-byte copy of `/Users/bkyanjo3/Desktop/Final_.png`, identified by Brian as the Teton figure. No interpretation of the red outline or color-bar units is invented. Google Earth and Airbus credits remain visible.
+- `../profile/brian-kyanjo.png`: byte-for-byte copy of `/Users/bkyanjo3/Desktop/brian_photo.png`, supplied by Brian as his portrait.
+
+The flood maps replace the displayed adaptive-mesh image. The mesh file remains available as an unused research asset. No Missoula figure was located in the supplied archives or the searched GeoFlood example image files.
