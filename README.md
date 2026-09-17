@@ -118,15 +118,15 @@ README.md
 
 Edit the HTML pages directly. Shared navigation, footers, and metadata are deliberately included in each page so the website works without a build system. Apply changes to those elements across all pages, including `404.html`. Shared styles and behavior live in `assets/css` and `assets/js`.
 
-Software links are taken from the CV. The software page has direct anchors at `/software/#icesee`, `/software/#cryostack`, and `/software/#geoflood`. All research details, publication titles, authors, statuses, grant information, dates, awards, and contact details come from the supplied CV. The homepage and research/software introductions condense that material. Publication statuses remain **Submitted** and **In preparation** where specified; no later acceptance or publication status is inferred. Undated events remain undated. The web CV includes all 12 CV sections, including references, and preserves the source's differing conference names.
+Software links are taken from the CV. The software page has direct anchors at `/software/#icesee`, `/software/#cryostack`, and `/software/#geoflood`. Research details, publication titles, authors, statuses, grant information, awards, and contact details come from the supplied CV. The current appointment has been updated from Brian’s September 2026 instruction: Research Scientist II since September 2026, following the postdoctoral role (August 2024–August 2026). This correction appears on the website, in structured metadata, and in both CV formats. The homepage and research/software introductions condense that material. Publication statuses remain **Submitted** and **In preparation** where specified; no later acceptance or publication status is inferred. Undated events remain undated. The web CV includes all 12 CV sections, including references, and preserves the source's differing conference names.
 
-The terrain graphic is an abstract computational illustration, not scientific results or a portrait. It is a local SVG with no external dependencies. No missing-image placeholders are shipped. To add a portrait later, place an appropriately sized image in `assets/images/`, replace the homepage figure, and supply descriptive alternative text. The monogram favicon is included. Social titles/descriptions are present; no portrait or social-card image is assumed.
+The homepage, Research, and Software pages use Brian’s own figures from the dissertation and ICESEE archives. Full-size figures are linked and scientific panels are preserved. See `assets/images/research/SOURCES.md` for their exact provenance. No missing-image placeholders are shipped. To add a portrait later, place an appropriately sized image in `assets/images/`, replace the homepage figure, and supply descriptive alternative text. The monogram favicon is included. Social titles/descriptions are present; no portrait or social-card image is assumed.
 
 ## PDF and web CV
 
 The PDF is already included at **`cv/brian-kyanjo-cv.pdf`**. Replace that file with future CV exports using exactly the same filename; the download buttons will continue to work.
 
-The included LaTeX source preserves the supplied wording. Its only changes are layout adjustments: extra line-breaking flexibility, positive spacing below entry headings, and space reserved before entries to avoid isolated headings. Rebuild using a TeX distribution with the packages listed in the source (including `needspace`):
+The included LaTeX source incorporates the Research Scientist II appointment and the preceding postdoctoral dates supplied by Brian in September 2026. Other wording is preserved. Layout adjustments include: extra line-breaking flexibility, positive spacing below entry headings, and space reserved before entries to avoid isolated headings. Rebuild using a TeX distribution with the packages listed in the source (including `needspace`):
 
 ```sh
 pdflatex -interaction=nonstopmode -halt-on-error -output-directory=cv cv/brian-kyanjo-cv.tex
@@ -150,3 +150,31 @@ git add .
 git commit -m "Update research website"
 git push
 ```
+
+
+## Working folder and GitHub profile
+
+Use `/Users/bkyanjo3/kyanjo.github.io` as the editable checkout alongside `geoflood-project`. Open that folder in your editor and preview with `python3 -m http.server 8000`. Keep future changes there, then commit and push to `KYANJO/kyanjo.github.io`.
+
+GitHub does not offer an automatic redirect from a personal profile to an external website. The supported setup is:
+
+1. Publish the site at `https://kyanjo.github.io`.
+2. In GitHub **Settings → Public profile**, set the website/URL field to `https://kyanjo.github.io` and save.
+3. Put the contents of `profile-setup/README-for-KYANJO.md` into `README.md` at the root of the public **`KYANJO/KYANJO`** repository. This places a prominent **Visit my research website** link at the top of your profile.
+4. Pin `kyanjo.github.io` on the profile if desired.
+
+The profile README belongs in `KYANJO/KYANJO`, separate from this website repository. A prepared copy is included; it has not been published. The homepage has a **GitHub repositories** button, and every page has a **Website repository** link in the footer.
+
+The two repositories were found to exist and be empty during setup. For an empty existing website repository, after verifying GitHub authentication, initialize this folder and attach its remote:
+
+```sh
+cd /Users/bkyanjo3/kyanjo.github.io
+gh auth login -h github.com
+git init -b main
+git remote add origin https://github.com/KYANJO/kyanjo.github.io.git
+git add .
+git commit -m "Add research website with current role and research figures"
+git push -u origin main
+```
+
+Then configure Pages with the POST or PUT command above. If the repository has gained commits since setup, clone and merge the reviewed files instead of force-pushing. If this folder is already a Git checkout, skip `git init` and inspect `git remote -v` before adding the remote.
