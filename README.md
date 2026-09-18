@@ -91,6 +91,16 @@ python3 -m http.server 8000
 
 Open `http://localhost:8000`. Stop the server with Ctrl+C. No Node.js installation is required. Navigation and content also work without JavaScript; JavaScript enhances the mobile menu, theme preference, and print button. Without JavaScript, use the browser's Print command for the web CV.
 
+## Canonical data
+
+Biographical/professional facts (employment, education, projects,
+publications, talks, service, funding) now live in `data/` and are
+generated into the pages below, the CV (web + LaTeX + PDF), and the
+`profile-setup/` files by `scripts/build_all.py`. See `data/README.md` for
+the day-to-day workflow. The rest of this section describes the generated
+files themselves and still applies to page-specific layout/prose that isn't
+in `data/`.
+
 ## Files and editing
 
 ```text
