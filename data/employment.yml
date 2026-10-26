@@ -1,0 +1,212 @@
+# Canonical employment/appointment history.
+# Edit this file when: you start/end a job, change title/unit, or the OSPO
+# arrangement or effort split changes.
+#
+# Fields:
+#   id            stable slug, used for cross-references
+#   title         position title
+#   institution   organization name
+#   unit          department/school/center (optional)
+#   start / end   YYYY-MM ("present" appointments use end: null)
+#   is_primary_current  true for the one appointment that is the "main job" today
+#                 (validation enforces exactly one true among open appointments
+#                 unless is_primary_current is explicitly set on more than one
+#                 with allow_multiple_primary: true at the list level)
+#   bullets       CV-style accomplishment bullets (used only in CV; long-form)
+#   ospo          optional structured sub-record for an effort-split arrangement
+#                 connected to this appointment (not a separate appointment)
+
+allow_multiple_primary_current: false
+
+appointments:
+  - id: gt-research-scientist-ii
+    title: Research Scientist II
+    institution: Georgia Institute of Technology
+    unit: School of Earth and Atmospheric Sciences
+    start: "2026-09"
+    end: null
+    is_primary_current: true
+    previous_role_note: "Postdoctoral Research Fellow — Computational Science and Scientific Software, Aug. 2024–Aug. 2026."
+    bullets:
+      - "Design and develop ICESEE, an open-source, MPI-parallel ensemble data assimilation framework for state and parameter estimation in ice-sheet and geophysical models."
+      - "Develop scalable model-coupling interfaces and workflows for integrating ICESEE with independent scientific models, including ISSM and Icepack."
+      - "Parallelize and optimize ensemble simulation and data assimilation workflows for distributed-memory HPC systems using MPI and scalable scientific computing methods."
+      - "Design and develop <a href=\"https://cryostack.eas.gatech.edu/\">CryoStack</a>, a modular scientific cyberinfrastructure platform connecting cryosphere data, models, data assimilation, and heterogeneous computing environments through CryoLauncher, ICESEE, Frozen Legacies, and LIVIST."
+      - "Develop Remote and AWS cloud execution capabilities for scientific workflows, including containerized execution on AWS Fargate and EC2 and integration with institutional computing resources."
+      - "Develop reproducible scientific software environments using Docker, Apptainer, Spack, and HPC deployment workflows."
+      - "Develop Python–MATLAB interoperability and ISSM–ICESEE coupling workflows for ensemble forecasting, parameter estimation, and data assimilation."
+      - "Develop workflow automation for experiment configuration, provenance, simulation diagnostics, HPC job orchestration, and scientific result management."
+      - "Contribute to research on scalable data assimilation and computational methods for understanding ice-sheet dynamics and their contribution to future sea-level change."
+    # LaTeX/PDF CV historically used a shorter, CryoStack-application-agnostic
+    # bullet here; the web CV/site already describe the four applications.
+    # Canonical data uses the fuller, current description everywhere.
+    ospo:
+      program: OSPO@GT
+      role_title: Research Software Engineer
+      role_start: "2026-09"
+      current_description: "Since September 2026, I have also worked as a Research Software Engineer with Georgia Tech’s Open Source Program Office (OSPO), as part of my Georgia Tech appointment alongside EAS research. From October through December 2026, OSPO supports 30% of this appointment’s effort."
+      # Role and September start confirmed by Brian on 26 October 2026.
+      # The 30% October–December allocation remains part of the same GT appointment.
+      cv_description: '<strong>Research Software Engineer, OSPO@GT (since September 2026; part-time, 30% FTE allocation October–December 2026).</strong><br>Contribute to open-source AI platform development for Georgia Tech educators under Dr. Fang (Cherry) Liu, including GT-DARE deployment, operational documentation, and access/onboarding workflow development. This work is part of my Georgia Tech appointment alongside EAS research.'
+      full_name: Georgia Tech Open Source Program Office
+      effort_pct: 30
+      start: "2026-10"
+      end: "2026-12"
+      # Shared verbatim continuation clause (identical on talks page + CV) --
+      # kept as an explicit fact rather than re-derived, since it is quoted
+      # unchanged in both prose contexts below.
+      continuation_clause: "the remaining effort will continue with EAS/CryoStack development"
+      tense: current
+      # Structured list, used for the ORCID checklist (rendered as bullets,
+      # order preserved). The talks-page and CV paragraphs below are each
+      # their own hand-tuned prose rendering of these same facts (irregular
+      # English conjunctions -- "and, as time allows," -- don't survive a
+      # generic list-join, so they are kept as curated sentences here rather
+      # than mechanically generated).
+      activities:
+        - "Contributing to DARE, including AI-facing development"
+        - "Work with open scientific datasets and Hugging Face"
+        - "Mentoring student contributors on open-source projects, including AI- and security-focused work"
+        - "Maintainer activities and monthly meetings"
+        - "Hackathons and workshops"
+        - "Open-source websites, repositories, accounts, and supporting infrastructure"
+        - "Training resources, as time allows"
+      talks_activities_sentence: "Planned responsibilities include contributing to DARE, including AI-facing development; work with open scientific datasets and Hugging Face; mentoring student contributors on open-source projects, including AI- and security-focused work; maintainer activities and monthly meetings; hackathons and workshops; open-source websites, repositories, accounts, and supporting infrastructure; and, as time allows, training resources."
+      cv_activities_sentence: "Planned work includes DARE and AI-facing development, open datasets and Hugging Face, student mentoring, maintainer activities, and open-source infrastructure and events."
+
+  - id: gt-rfac
+    title: Research Faculty Advisory Council (RFAC), EAS
+    institution: Georgia Institute of Technology
+    unit: null
+    start: "2025-04"
+    end: null
+    is_primary_current: false
+    bullets:
+      - "Represent research faculty interests within the College of Sciences."
+      - "Serve as a liaison between research faculty and college leadership."
+      - "Advance initiatives supporting faculty engagement, inclusion, and professional growth."
+      - "Evaluate internal grant proposals and contribute to funding decisions."
+
+  - id: rmacc-apprenticeship
+    title: RMACC Apprenticeship
+    institution: Rocky Mountain Advanced Computing Consortium (RMACC)
+    unit: null
+    start: "2023-10"
+    end: "2024-09"
+    is_primary_current: false
+    bullets:
+      - "Designed, quoted, and deployed a major expansion of the regional high-performance computing cluster at the University of Colorado Boulder (Alpine supercomputer)."
+      - "Designed a research computing cluster in a Unix environment."
+      - "Supported HPC cluster provisioning, deployment automation, and systems administration workflows."
+      - "Created playbooks and container images for MPI-based applications."
+
+  - id: bsu-gta
+    title: Graduate Teaching Assistant
+    institution: Boise State University, School of Computing
+    unit: null
+    start: "2023-06"
+    end: "2023-12"
+    is_primary_current: false
+    bullets:
+      - "Developed a computational model for overland flooding: <a href=\"https://github.com/KYANJO/GeoFlood\">github.com/KYANJO/GeoFlood</a>."
+      - "Developed a CUDA-based version of GeoFlood."
+      - "Served as teaching assistant for Introduction to Programming in Mathematics."
+
+  - id: bsu-gra
+    title: Graduate Research Assistant
+    institution: Boise State University, School of Computing
+    unit: null
+    start: "2020-08"
+    end: "2024-07"
+    is_primary_current: false
+    bullets:
+      - "Developed GeoFlood, a computational model for overland flooding: <a href=\"https://github.com/KYANJO/GeoFlood\">github.com/KYANJO/GeoFlood</a>."
+      - "Benchmarked GeoFlood across CPU and GPU computing platforms."
+      - "Developed CUDA-based Riemann solvers for GeoFlood."
+      - "Developed ForestClaw extensions for atmospheric applications."
+      - "Explored data-driven and machine learning approaches to enhance predictive modeling and simulation accuracy."
+      - "Implemented a discontinuous Galerkin solver within ForestClaw as a summer research project."
+      - "Completed a comprehensive examination on Riemann solvers for wet/dry interfaces in finite-volume schemes: <a href=\"https://github.com/KYANJO/Comp_exam/tree/main/code/comp_exam_artifact\">github.com/KYANJO/Comp_exam/tree/main/code/comp_exam_artifact</a>."
+      - "Implemented approximate and exact Riemann solvers for handling wet/dry interfaces using finite-volume schemes."
+      - "Investigated accelerated wave-propagation algorithms using GPU and CPU comparisons on HPC platforms."
+
+  - id: inl-intern
+    title: Intern
+    institution: Idaho National Laboratory (INL)
+    unit: null
+    start: "2022-05"
+    end: "2022-09"
+    is_primary_current: false
+    bullets:
+      - "Supported post-irradiation examination capabilities for nuclear fuel using gamma tomography."
+      - "Simulated gamma-emission tomography of nuclear fuel and generated tomographic reconstructions to identify isotopic distributions."
+      - "Performed thermal-fluid analyses of geothermal closed-loop configurations and discussed results with the INL research team."
+      - "Participated in team meetings and contributed to maintenance and improvement of the software suite."
+
+  - id: aims-tutor
+    title: Tutor
+    institution: AIMS Rwanda
+    unit: null
+    start: "2020-09"
+    end: "2020-12"
+    is_primary_current: false
+    bullets:
+      - "Tutored master&#x27;s-level students in mathematics."
+      - "Assisted lecturers with academic quality assurance."
+      - "Supported administrative, library, IT, logistics, and technical activities as needed."
+
+  - id: esmt-berlin-cert
+    title: Certificate in Business Analytics
+    institution: ESMT Berlin
+    unit: null
+    start: "2020-01"
+    end: "2020-12"
+    display_date: "2020"
+    is_primary_current: false
+    bullets: []
+
+  - id: marga-business-sim
+    title: Certificate in Business Simulations Management
+    institution: Marga Business Simulations, Germany
+    unit: null
+    start: "2020-01"
+    end: "2020-12"
+    display_date: "2020"
+    is_primary_current: false
+    bullets:
+      - "Developed and marketed products within a competitive business simulation."
+      - "Collaborated with six students from different universities and disciplines."
+      - "Served as team lead."
+
+  - id: god-cares-teacher
+    title: Physics and Mathematics Teacher
+    institution: God Cares High School
+    unit: null
+    start: "2020-01"
+    end: "2020-07"
+    is_primary_current: false
+    bullets:
+      - "Taught physics and mathematics."
+      - "Supervised laboratory activities."
+
+  - id: ubuntu-hill-teacher
+    title: Physics and Mathematics Teacher
+    institution: Ubuntu Hill School
+    unit: null
+    start: "2019-08"
+    end: "2020-07"
+    is_primary_current: false
+    bullets:
+      - "Taught physics and mathematics."
+
+  - id: kcca-intern
+    title: Intern
+    institution: Kampala Capital City Authority (K.C.C.A.)
+    unit: null
+    start: "2017-05"
+    end: "2017-08"
+    is_primary_current: false
+    bullets:
+      - "Fabricated, repaired, and replaced damaged street lights and electronic control boxes."
+      - "Troubleshot, maintained, and installed electric and solar street lights across the city."
+      - "Supported maintenance of traffic lights and investigated approaches for reducing peak-hour traffic."

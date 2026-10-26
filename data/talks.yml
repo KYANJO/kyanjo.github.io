@@ -1,0 +1,41 @@
+# Canonical talks/posters/conferences records.
+# Edit this file when: you give a talk, present a poster, or attend/organize
+# a conference or short course.
+#
+# Each item is stored as a single pre-rendered `html` fragment (the exact
+# wording already used on the site/CV) rather than decomposed into rigid
+# title/venue/date fields, because the original phrasing mixes venue-first,
+# title-first, and date-suffixed forms inconsistently by design (it mirrors
+# how each event is actually cited). Order in this file is the display order
+# -- do not reorder without meaning to change the rendered list. Both the
+# talks page and the CV render the *same* three lists below verbatim.
+
+invited_talks:
+  - html: "ESCO 2026: <em>Advanced Computational Methods for Earth System Modeling and Analysis</em>"
+  - html: "<em>ICESEE: An Open-Source, Scalable Data Assimilation Framework for Ice Sheet Modeling</em>, 5th Biennial SIAM North Pacific Meeting"
+  - html: "<em>Math on ICE: ICESEE Coupling with ISSM for EnKF Data Assimilation</em>"
+  - html: "Seminar for the Geosystems Group: <em>Unified Computational Approaches to Flood and Ice Sheet Modeling</em>"
+  - html: "<em>Data Assimilation with Ice Sheet Modeling</em>, ART@SC24"
+  - html: "<em>GeoFlood: Computational Model for Overland Flooding</em>, 4th Biennial Meeting of the SIAM Pacific Northwest Section"
+  - html: "<em>GeoFlood: A Computational Model for Overland Flooding</em>, 2023 Lightning Talk, ACES Workshop"
+  - html: "Research Visit at USGS: <em>Overland Flow Modeling with David L. George</em>, June 2023"
+  - html: "Keynote Speaker, GAIN: Promoting and encouraging study abroad for students from low-developing countries"
+
+conference_posters:
+  - html: "<em>ICESEE: An Open-Source, Scalable Data Assimilation Library for Ice Sheet Models</em>, AGU 2025"
+  - html: "<em>GeoFlood: A Computational Model for Overland Flooding</em>, 2023 Graduate Showcase, Boise State University"
+  - html: "<em>GPU-Accelerated Wave Propagation Algorithm</em>, 2023 Research Computing Days Conference"
+  - html: "<em>Geothermal Closed Loop</em>, 2022 Clean Energy Development, Idaho National Laboratory"
+  - html: "<em>GPU-Accelerated Wave Propagation Algorithm</em>, 2022 3rd Biennial Meeting of the SIAM Pacific Northwest Section"
+
+conferences_and_short_courses:
+  - html: "American Geophysical Union (AGU) Annual Meeting, 2025"
+  - html: "Society for Industrial and Applied Mathematics (SIAM), 5th Biennial Meeting of the SIAM Pacific Northwest Section, 2025"
+  - html: "Scalable and Computationally Reproducible Approaches to Arctic Research, 2025"
+  - html: "Adviser and Icepack Workshop and Hackathon, 2025"
+  - html: "The International Conference for High Performance Computing, Networking, Storage, and Analysis (SC), 2024"
+  - html: "United States Research Software Engineers (US-RSE) Conference, <em>Software-Enabled Discovery and Beyond</em>, 2023"
+  - html: "Accelerating Computing for Emerging Sciences (ACES) Workshop, 2023"
+  - html: "SIAM Conference on Parallel Processing for Scientific Computing (PP22), 2022"
+  - html: "SIAM Conference on Computational Science and Engineering, attendee and poster judge"
+  - html: "Winter School, <em>Advanced Numerical Methods for Hyperbolic PDE</em>, Laboratory of Applied Mathematics, University of Trento, Italy, 2021"

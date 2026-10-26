@@ -1,0 +1,81 @@
+% Canonical publication records.
+%
+% Edit this file when: you submit/publish a new paper, or a status changes
+% (e.g. "submitted" -> "published").
+%
+% Non-standard fields used deliberately, read by scripts/build_site.py,
+% scripts/build_cv.py, and scripts/validate_data.py:
+%   status  = submitted | in-preparation | published   (required)
+%   pubtype = journal-article | preprint | proceedings | technical-report
+%   url     = canonical link (usually the DOI resolver link)
+%   order   = explicit display order (lower first); ties broken by file order
+%
+% `author` uses the exact name form printed on the current site/CV for that
+% publication (some entries use full first names, one uses initials) -- do
+% not "normalize" these to a single style; preserve each publication's own
+% author-list formatting.
+%
+% Do NOT set status = published for a manuscript/preprint that has not
+% actually been accepted/published (e.g. a JOSS submission still under
+% review). scripts/validate_data.py checks status is one of the three
+% allowed values and will not itself upgrade a status -- only a human edit
+% here can do that, and it should happen only when the real status changes.
+
+@article{kyanjo_icesee_library,
+  author  = {Brian Kyanjo and Alexander Robel},
+  title   = {The Ice Sheet State and Parameter Estimator (ICESEE) Library: Ensemble Kalman Filtering for Ice Sheet Models},
+  status  = {submitted},
+  pubtype = {journal-article},
+  doi     = {10.48550/arXiv.2603.26947},
+  url     = {https://doi.org/10.48550/arXiv.2603.26947},
+  order   = {1}
+}
+
+@article{kyanjo_geoflood_gpu,
+  author  = {Brian Kyanjo and Donna Calhoun and David L. George},
+  title   = {A Hybrid CPU/GPU GeoFlood: High-Performance Computing in Overland Flooding},
+  status  = {in-preparation},
+  pubtype = {journal-article},
+  order   = {2}
+}
+
+@article{kyanjo_geoflood_model,
+  author  = {Brian Kyanjo and Donna Calhoun and David L. George},
+  title   = {GeoFlood: Computational Model for Overland Flooding},
+  status  = {submitted},
+  pubtype = {journal-article},
+  doi     = {10.48550/arXiv.2403.15435},
+  url     = {https://doi.org/10.48550/arXiv.2403.15435},
+  order   = {3}
+}
+
+@misc{kyanjo_wave_propagation_gpu,
+  author  = {B. Kyanjo and D. Calhoun and C. Burstedde and S. Aiton and J. Snively and M. Shih},
+  title   = {GPU Accelerated Adaptive Wave Propagation Algorithm},
+  year    = {2023},
+  status  = {published},
+  pubtype = {preprint},
+  doi     = {10.13140/RG.2.2.11304.34569},
+  url     = {https://doi.org/10.13140/RG.2.2.11304.34569},
+  order   = {4}
+}
+
+@inproceedings{parisi_closed_loop_geothermal,
+  author    = {Carlo Parisi and Paolo Balestra and Brian Kyanjo and Theron D. Marshall and Travis L. McLing and Mark D. White},
+  title     = {Closed Loop Geothermal Analysis Modeling and Simulation Using Idaho National Laboratory&#x27;s RELAP5-3D-FALCON Coupled Codes},
+  venue     = {Proceedings of the 48th Workshop on Geothermal Reservoir Engineering, Stanford University, Stanford, California, February 6–8, 2023, SGP-TR-224},
+  status    = {published},
+  pubtype   = {proceedings},
+  order     = {5}
+}
+
+@article{kyanjo_cryostack_joss,
+  author  = {Brian Kyanjo and Alexander A. Robel and Angelo S. Tarzona and Eliza J. Dawson and Winnie Chu},
+  title   = {CryoStack-v1.0.0: A modular cyberinfrastructure stack for cryosphere data, models, data assimilation, and heterogeneous computing},
+  status  = {submitted},
+  pubtype = {journal-article},
+  venue   = {Journal of Open Source Software (JOSS)},
+  year    = {2026},
+  url     = {https://github.com/ICESEE-project/CryoStack/blob/joss-v1.0.0/paper/paper.md},
+  order   = {0}
+}

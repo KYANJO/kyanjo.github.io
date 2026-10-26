@@ -1,0 +1,72 @@
+# Canonical personal/profile facts.
+# Edit this file when: name, title, institution, contact info, or profile links change.
+# Rendered into: every page footer/header/JSON-LD, contact page, CV header,
+# GitHub profile README, LinkedIn draft, ORCID checklist.
+
+name: Brian Kyanjo
+current_title: Research Scientist II
+secondary_title: Research Software Engineer
+secondary_unit: Open Source Program Office (OSPO)
+institution: Georgia Institute of Technology
+institution_short: Georgia Tech
+unit: School of Earth and Atmospheric Sciences
+email: bkyanjo3@gatech.edu
+phone: "(208) 544–6609"
+phone_tel: "+12085446609"
+website: https://kyanjo.github.io/
+github_user: KYANJO
+github_url: https://github.com/KYANJO
+github_repo_url: https://github.com/KYANJO/kyanjo.github.io
+orcid: 0000-0002-0995-1051
+orcid_url: https://orcid.org/0000-0002-0995-1051
+linkedin_url: https://linkedin.com/in/kyanjo-brian
+linkedin_label: Brian Kyanjo
+
+# Short identity line used across CV header, homepage discipline strip, GitHub README.
+tagline: Computational Scientist | Research Software Engineer
+tagline_secondary: HPC & Scientific Computing | Numerical Modeling | Open-Source Research Software
+
+# One canonical "who I am" paragraph (facts + identity, no page-specific narrative framing).
+# Presentation layer (homepage hero, GitHub README, LinkedIn About) may reuse, trim, or
+# reframe this, but the underlying claim should not be restated differently elsewhere.
+research_identity_summary: >-
+  I work across scientific computing, computational mathematics, numerical
+  modeling, data assimilation, and machine learning, developing research
+  software and cyberinfrastructure for cryosphere and Earth-system
+  applications on HPC and cloud platforms.
+
+professional_summary: >-
+  Computational scientist and scientific software developer specializing in
+  high-performance scientific computing, numerical modeling, data
+  assimilation, and scalable research software. My work focuses on
+  developing reliable, reproducible, and interoperable computational systems
+  for large-scale scientific applications. I have experience developing
+  open-source scientific software, MPI- and GPU-based workflows, HPC and
+  cloud computing platforms, containerized environments, and coupled
+  modeling systems across Python, MATLAB, and compiled scientific codes.
+
+research_areas:
+  - Scientific computing
+  - Computational mathematics
+  - Numerical modeling
+  - Data assimilation
+  - Machine learning
+  - High-performance computing
+  - Cloud computing
+  - Cryosphere / Earth-system applications
+  - Research software
+  - Scientific cyberinfrastructure
+
+technical_skills:
+  - label: Scientific Computing
+    items: Numerical PDEs, finite volume methods, adaptive mesh refinement (AMR), data assimilation, ensemble methods, uncertainty quantification, numerical modeling
+  - label: Programming
+    items: Python, C++, C, FORTRAN, MATLAB, CUDA, R, Java, Bash
+  - label: HPC and Parallel Computing
+    items: MPI, OpenMP, CUDA, Slurm, distributed-memory computing, GPU acceleration, parallel I/O, scalable scientific workflows
+  - label: Scientific Software Engineering
+    items: "Git, Linux, APIs, model coupling, Python–MATLAB interoperability, testing, workflow automation, reproducible computational workflows"
+  - label: Research Infrastructure
+    items: Docker, Apptainer, Spack, Jupyter, AWS Batch, Podman, systemd Quadlet, HPC deployment, containerized scientific environments
+  - label: Additional
+    items: LaTeX, SQL, HTML, electronics/auto technician experience

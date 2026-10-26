@@ -1,0 +1,25 @@
+# Canonical education/degree history.
+# Edit this file when: you complete a degree, correct an advisor/thesis title, etc.
+# Rendered into: research page, CV (web + LaTeX).
+
+degrees:
+  - institution: Boise State University (BSU)
+    year: "2024"
+    degree: Computing Ph.D. in Computational Math Sciences and Engineering
+    detail_label: Dissertation
+    detail_title: "GeoFlood: A Computational Model for Overland Flooding"
+    advisor: "Prof. Donna Calhoun"
+
+  - institution: African Institute for Mathematical Sciences (AIMS), Rwanda
+    year: "2020"
+    degree: Master of Science in Mathematical Sciences (Climate Resilience)
+    detail_label: Thesis
+    detail_title: "Simulating Tropical Cyclone over the Southwest Indian Ocean using Model for Prediction Across Scales (MPAS): Sensitivity to Cloud Microphysics Schemes"
+    advisor: "Prof. Babatunde J. Aboidun"
+
+  - institution: Makerere University (MAK)
+    year: "2018"
+    degree: Bachelor of Science in Physical Sciences (Physics and Mathematics)
+    detail_label: Final Project
+    detail_title: "Water Level Sensor System (Design and Construction)"
+    advisor: "Prof. Ireeta Tumps Winston"

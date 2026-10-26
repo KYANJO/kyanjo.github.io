@@ -1,0 +1,142 @@
+# Canonical software/project facts.
+# Edit this file when: a project's links change, a new project ships, or a
+# project's status/description needs correcting.
+#
+# `blurb_card`   homepage + software-page lead sentence (identical wording there today)
+# `blurb_cv`     CV one-liner (may legitimately differ in phrasing/length from blurb_card)
+# `blurb_github` GitHub profile README one-liner (shortest)
+# `detail_html`  longer software-page paragraph(s); page-specific narrative, kept as-is
+# `applications` only present for CryoStack: its four first-class scientific applications
+# `order`    display order on the homepage / software page (CryoStack first)
+# `cv_order` display order in the CV's "Selected Scientific Software" list,
+#            which has always listed ICESEE before CryoStack -- a distinct,
+#            equally legitimate presentation order kept as its own fact
+#            rather than forced to match `order`
+# `github_readme_order` display order in profile-setup/README-for-KYANJO.md
+#            (ICESEE, CryoStack, GeoFlood), also its own fact
+
+projects:
+  - id: cryostack
+    name: CryoStack
+    featured: true
+    order: 1
+    cv_order: 2
+    github_readme_order: 2
+    number: "01"
+    symbol: "▥"
+    eyebrow: Scientific cyberinfrastructure
+    website: https://cryostack.eas.gatech.edu/
+    github: https://github.com/ICESEE-project/CryoStack
+    docs_url: https://cryostack.eas.gatech.edu/documentation
+    tags_card: "Data · Models · HPC/Cloud"
+    tags_software: "Data · Models · Assimilation · HPC/Cloud"
+    blurb_card: "A modular scientific cyberinfrastructure platform connecting cryosphere data, models, data assimilation, and heterogeneous computing environments."
+    blurb_cv: "A modular scientific cyberinfrastructure platform connecting cryosphere data, models, data assimilation, and heterogeneous computing environments."
+    blurb_github: "modular scientific cyberinfrastructure connecting cryosphere data, models, data assimilation, and computing environments through CryoLauncher, ICESEE, Frozen Legacies, and LIVIST."
+    detail_html: "CryoStack brings together four first-class scientific applications: CryoLauncher, ICESEE, Frozen Legacies, and LIVIST. Each retains its scientific interface and workflow. <a href=\"https://cryostack.eas.gatech.edu/documentation\">Read the CryoStack documentation</a> for detailed guidance."
+    show_in_github_readme: true
+    applications:
+      - id: cryolauncher
+        html_anchor: true
+        name: CryoLauncher
+        url: https://cryostack.eas.gatech.edu/icesheets/
+        description_html: "A scientific configuration and execution environment for ISSM and Icepack workflows. Basic and Advanced are configuration experiences. Execution is organized around Remote and Cloud; CryoLauncher has no Local execution mode."
+      - id: icesee-app
+        html_anchor: false
+        name: ICESEE
+        url: https://cryostack.eas.gatech.edu/icesee-gui/
+        description_html: "An ensemble data assimilation and state/parameter estimation framework supporting ISSM, Icepack, and synthetic systems such as Lorenz-96. ICESEE has its own Local, Remote, and Cloud execution implementations, independent of CryoLauncher’s execution and result handling."
+      - id: frozen-legacies
+        html_anchor: true
+        name: Frozen Legacies
+        url: https://cryostack.eas.gatech.edu/frozen-legacies/
+        description_html: "A scientific application centered on historical Antarctic radar observations, including cataloging, interpretation, tracing, and dataset workflows."
+      - id: livist
+        html_anchor: true
+        name: LIVIST
+        url: https://cryostack.eas.gatech.edu/livist/
+        description_html: "A scientific application for Antarctic englacial-temperature products informed by radar and borehole observations, with its own scientific interface and workflow."
+
+  - id: icesee
+    name: ICESEE
+    cv_display_name: "ICESEE (Ice Sheet State and Parameter Estimator)"
+    featured: true
+    order: 2
+    cv_order: 1
+    github_readme_order: 1
+    number: "02"
+    symbol: "≋"
+    eyebrow: "State & parameter estimation"
+    github: https://github.com/ICESEE-project/ICESEE
+    tags_card: "Ensemble methods · MPI · Model coupling"
+    blurb_card: "Open-source, MPI-parallel ensemble data assimilation for ice-sheet and geophysical models."
+    blurb_cv: "Open-source, MPI-parallel ensemble data assimilation framework for state and parameter estimation in ice-sheet and geophysical models."
+    blurb_github: "MPI-parallel ensemble data assimilation for ice-sheet and geophysical models."
+    detail_html: "ICESEE (Ice Sheet State and Parameter Estimator) supports ensemble forecasting and state and parameter estimation for models such as ISSM, Icepack, and Lorenz-96. My work includes MPI-parallel workflows, model interfaces, and Python–MATLAB interoperability. It is both a scientific framework and a first-class application within CryoStack, with its own Local, Remote, and Cloud execution implementations."
+    show_in_github_readme: true
+
+  - id: geoflood
+    name: GeoFlood
+    featured: true
+    order: 3
+    cv_order: 5
+    github_readme_order: 3
+    number: "03"
+    symbol: "⌁"
+    eyebrow: Overland flood modeling
+    github: https://github.com/KYANJO/GeoFlood
+    tags_card: "Finite volumes · AMR · CPU/GPU"
+    blurb_card: "A hybrid CPU/GPU computational model using finite volume methods and adaptive mesh refinement."
+    blurb_cv: "Hybrid CPU/GPU computational model for overland flooding using finite volume methods and adaptive mesh refinement."
+    blurb_github: "CPU/GPU flood modeling with finite volumes and adaptive mesh refinement."
+    detail_html: "Developed during my doctoral research at Boise State University. My work includes CPU/GPU benchmarking, CUDA-based Riemann solvers, and finite-volume methods for wet/dry interfaces."
+    show_in_github_readme: true
+
+  - id: icesee-containers
+    name: ICESEE-Containers
+    featured: false
+    order: 4
+    cv_order: 3
+    github: https://github.com/ICESEE-project/ICESEE-Containers
+    blurb_card: "Reproducible container infrastructure for deploying MPI-based scientific software across HPC systems using Docker and Apptainer."
+    blurb_cv: "Reproducible container infrastructure for deploying MPI-based scientific software across HPC systems using Docker and Apptainer."
+    show_in_github_readme: false
+
+  - id: icesee-spack
+    name: ICESEE-Spack
+    featured: false
+    order: 5
+    cv_order: 4
+    github: https://github.com/ICESEE-project/ICESEE-Spack
+    blurb_card: "Spack-based software environment for reproducible builds and deployment of ICESEE and coupled scientific modeling stacks."
+    blurb_cv: "Spack-based software environment for reproducible builds and deployment of ICESEE and coupled scientific modeling stacks."
+    show_in_github_readme: false
+
+  - id: forestclaw-extensions
+    name: ForestClaw Extensions
+    featured: false
+    order: 6
+    cv_order: 6
+    github: https://github.com/KYANJO/forestclaw
+    blurb_card: "Numerical solver and adaptive mesh refinement development for PDE-based geophysical simulations. Contributions include atmospheric extensions and a discontinuous Galerkin solver."
+    blurb_cv: "Numerical solver and adaptive mesh refinement development for PDE-based geophysical simulations."
+    show_in_github_readme: false
+
+  - id: gt-dare
+    name: GT-DARE
+    cv_display_name: "GT-DARE — Georgia Tech OSPO contributions"
+    featured: true
+    order: 7
+    cv_order: 7
+    github_readme_order: 4
+    number: "04"
+    symbol: "↗"
+    eyebrow: Institutional AI infrastructure
+    github: https://github.com/gt-ospo/gt-dare-deploy
+    tags_card: "Django · React · Podman · Linux"
+    blurb_card: "Deployment, operations, and access/onboarding workflow development for Georgia Tech’s deployment of the open-source DARE research platform."
+    blurb_cv: "Deployment and research software engineering through Georgia Tech OSPO: Podman/systemd services, operations documentation, and Django/React access-request and administrator-approval workflows."
+    blurb_github: "institutional deployment and research software engineering for DARE through Georgia Tech OSPO."
+    detail_html: >-
+      DARE (Dietrich Analysis Research Education) is an open-source research and conversation platform with multiple language-model providers, document-grounded retrieval, and tool integrations. Through Georgia Tech OSPO, I contribute to its institutional deployment and operation.</p><ul class="record-list"><li><strong>Deployment and operations:</strong> containerized services using Podman and systemd Quadlet, with installation and administration guidance.</li><li><strong>Access and onboarding:</strong> access-request, email-notification, and administrator-approval workflow development across the Django backend and React frontend.</li><li><strong>Deployment readiness:</strong> configuration checks, reverse-proxy routing, and rollout and rollback documentation.</li></ul><p class="work-status">Recent onboarding changes are prepared and locally tested; live email delivery and production rollout remain pending.</p><p>My contributions build on the upstream DARE platform. <a href="https://github.com/gt-ospo/gt-dare-backend">Backend repository ↗</a> · <a href="https://github.com/gt-ospo/gt-dare-frontend">Frontend repository ↗</a>
+    show_in_github_readme: true

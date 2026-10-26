@@ -16,7 +16,7 @@
 \setlength{\emergencystretch}{2em}
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{2pt}
-\pagestyle{empty}
+\pagestyle{plain}
 \urlstyle{same}
 
 \titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
@@ -27,7 +27,7 @@
 % ============================================================
 
 \newcommand{\cvitem}[2]{%
-\textbf{#1}: #2\\
+\textbf{#1}: #2\par
 }
 
 \newcommand{\entry}[4]{%
@@ -76,7 +76,7 @@
 
 {\Huge\bfseries Brian Kyanjo}\\[6pt]
 
-{\large Computational Scientist \textbar\ Scientific Software Developer}\\[2pt]
+{\large Computational Scientist \textbar\ Research Software Engineer}\\[2pt]
 {\small HPC \& Scientific Computing \textbar\ Numerical Modeling \textbar\ Open-Source Research Software}\\[8pt]
 
 \small
@@ -149,6 +149,7 @@ Computational scientist and scientific software developer specializing in high-p
 % ============================================================
 
 \section*{Technical Skills}
+\begingroup\small
 
 %gen:tex-technical-skills
 \cvitem{Scientific Computing}{Numerical PDEs, finite volume methods, adaptive mesh refinement (AMR), data assimilation, ensemble methods, uncertainty quantification, numerical modeling}
@@ -159,22 +160,24 @@ Computational scientist and scientific software developer specializing in high-p
 
 \cvitem{Scientific Software Engineering}{Git, Linux, APIs, model coupling, Python--MATLAB interoperability, testing, workflow automation, reproducible computational workflows}
 
-\cvitem{Research Infrastructure}{Docker, Apptainer, Spack, Jupyter, AWS/cloud computing, HPC deployment, containerized scientific environments}
+\cvitem{Research Infrastructure}{Docker, Apptainer, Spack, Jupyter, AWS Batch, Podman, systemd Quadlet, HPC deployment, containerized scientific environments}
 
 \cvitem{Additional}{\LaTeX, SQL, HTML, electronics/auto technician experience}
 %/gen:tex-technical-skills
+\endgroup
 
 % ============================================================
 % Professional Experience
 % ============================================================
 
+\Needspace{9\baselineskip}
 \section*{Professional Experience}
 
 %gen:tex-professional-experience
 \entry{Georgia Institute of Technology}{Sept.\ 2026 -- Present}
 {Research Scientist II}
 {
-From October through December 2026, 30\% of my Research Scientist II effort will be supported by Georgia Tech’s Open Source Program Office (OSPO@GT). This is part of my Georgia Tech appointment; the remaining effort will continue with EAS/CryoStack development. Planned work includes DARE and AI-facing development, open datasets and Hugging Face, student mentoring, maintainer activities, and open-source infrastructure and events.
+\textbf{Research Software Engineer, OSPO@GT (since September 2026; part-time, 30\% FTE allocation October--December 2026).}\\Contribute to open-source AI platform development for Georgia Tech educators under Dr. Fang (Cherry) Liu, including GT-DARE deployment, operational documentation, and access/onboarding workflow development. This work is part of my Georgia Tech appointment alongside EAS research.
 
 \textbf{Previous appointment:} Postdoctoral Research Fellow -- Computational Science and Scientific Software, Aug. 2024--Aug. 2026.
 
@@ -186,7 +189,7 @@ From October through December 2026, 30\% of my Research Scientist II effort will
 
 \item Parallelize and optimize ensemble simulation and data assimilation workflows for distributed-memory HPC systems using MPI and scalable scientific computing methods.
 
-\item Design and develop \href{https://cryostack.eas.gatech.edu/index.html}{CryoStack}, a modular scientific cyberinfrastructure platform connecting cryosphere data, models, data assimilation, and heterogeneous computing environments through CryoLauncher, ICESEE, Frozen Legacies, and LIVIST.
+\item Design and develop \href{https://cryostack.eas.gatech.edu/}{CryoStack}, a modular scientific cyberinfrastructure platform connecting cryosphere data, models, data assimilation, and heterogeneous computing environments through CryoLauncher, ICESEE, Frozen Legacies, and LIVIST.
 
 \item Develop Remote and AWS cloud execution capabilities for scientific workflows, including containerized execution on AWS Fargate and EC2 and integration with institutional computing resources.
 
@@ -398,7 +401,7 @@ Open-source, MPI-parallel ensemble data assimilation framework for state and par
 
 \item \textbf{CryoStack} --
 A modular scientific cyberinfrastructure platform connecting cryosphere data, models, data assimilation, and heterogeneous computing environments.\\
-\href{https://cryostack.eas.gatech.edu/index.html}{Visit CryoStack} \textbar\ \githublink{ICESEE-project/CryoStack}
+\href{https://cryostack.eas.gatech.edu/}{Visit CryoStack} \textbar\ \githublink{ICESEE-project/CryoStack}
 
 \item \textbf{ICESEE-Containers} --
 Reproducible container infrastructure for deploying MPI-based scientific software across HPC systems using Docker and Apptainer.\\
@@ -416,6 +419,10 @@ Hybrid CPU/GPU computational model for overland flooding using finite volume met
 Numerical solver and adaptive mesh refinement development for PDE-based geophysical simulations.\\
 \githublink{KYANJO/forestclaw}
 
+\item \textbf{GT-DARE -- Georgia Tech OSPO contributions} --
+Deployment and research software engineering through Georgia Tech OSPO: Podman/systemd services, operations documentation, and Django/React access-request and administrator-approval workflows.\\
+\githublink{gt-ospo/gt-dare-deploy}
+
 \end{itemize}
 %/gen:tex-scientific-software
 
@@ -423,10 +430,15 @@ Numerical solver and adaptive mesh refinement development for PDE-based geophysi
 % Publications
 % ============================================================
 
-\section*{Journal Publications and Refereed Conference Proceedings}
+\section*{Publications and Manuscripts}
 
 %gen:tex-publications
 \begin{itemize}[leftmargin=1.2em, itemsep=4pt, topsep=2pt]
+
+\item Brian Kyanjo, Alexander A. Robel, Angelo S. Tarzona, Eliza J. Dawson, and Winnie Chu.
+\textit{CryoStack-v1.0.0: A modular cyberinfrastructure stack for cryosphere data, models, data assimilation, and heterogeneous computing}.
+Submitted to Journal of Open Source Software (JOSS).
+\href{https://github.com/ICESEE-project/CryoStack/blob/joss-v1.0.0/paper/paper.md}{Read manuscript}.
 
 \item Brian Kyanjo and Alexander Robel.
 \textit{The Ice Sheet State and Parameter Estimator (ICESEE) Library: Ensemble Kalman Filtering for Ice Sheet Models}.

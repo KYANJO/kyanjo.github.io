@@ -30,3 +30,9 @@
 .flood-figure>a{padding:0}.flood-figure img{height:auto;max-height:none;object-fit:contain}
 .flood-feature{margin-top:45px}.flood-feature .section-heading{margin-bottom:22px}
 @media(max-width:800px){.portrait{justify-self:center;max-width:460px;width:100%}.hero{padding-bottom:40px}}
+
+/* Current engineering portfolio. */
+.hero{grid-template-columns:1.35fr 1fr}.hero h1{font-size:clamp(42px,5.1vw,68px)}.hero h1 em{font-size:.82em}.hero-name{max-width:500px}.portrait{max-width:420px}.recent-work{margin-top:10px;margin-bottom:65px}.focus-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}.focus-project{border:1px solid var(--line);background:var(--surface);padding:34px;display:flex;flex-direction:column}.focus-label{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;font:11px/1.6 ui-monospace,monospace;color:var(--accent);letter-spacing:.05em;border-bottom:1px solid var(--line);padding-bottom:22px;margin-bottom:26px}.focus-project h3{font-size:clamp(30px,3.4vw,44px);margin-bottom:23px}.focus-project ul{padding-left:20px;color:var(--muted);font-size:15px;margin:18px 0}.focus-project .tags{margin-top:auto;padding-top:15px}.focus-project .text-link{align-self:flex-start;margin-top:26px}.work-status{font-size:14px;border-left:3px solid var(--accent);padding:12px 18px;background:var(--tint);margin-top:25px}.discipline-strip{margin-top:30px}.footer-links{max-width:660px}
+@media(max-width:800px){.hero,.focus-grid{grid-template-columns:1fr}.hero h1{font-size:clamp(40px,8vw,64px)}.focus-project{padding:26px}.recent-work{margin-top:20px}.portrait{max-width:420px}.hero-name{font-size:14px}}
+
+@media(min-width:801px){.software-projects{grid-template-columns:repeat(2,minmax(0,1fr))}}

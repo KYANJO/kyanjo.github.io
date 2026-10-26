@@ -1,0 +1,15 @@
+# Canonical CV references list.
+# Edit this file when: a reference's contact info changes or you add/remove one.
+references:
+  - name: "Prof. Alexander Robel"
+    institution: Georgia Institute of Technology
+    email: alexander.robel@eas.gatech.edu
+  - name: "Prof. Donna Calhoun"
+    institution: Boise State University
+    email: donnacalhoun@boisestate.edu
+  - name: "Mr. Craig Earley"
+    institution: University of Colorado Boulder
+    email: craig.Earley@colorado.edu
+  - name: "Dr. David L. George"
+    institution: U.S. Geological Survey
+    email: dgeorge@usgs.gov

@@ -1,0 +1,52 @@
+# Canonical activities / associations / awards record.
+# Edit this file when: you join/lead an organization, win an award, or take
+# on a new service role. Rendered verbatim (talks page + CV, "Activities,
+# Associations, and Awards"). `type` is only used to group entries for the
+# ORCID checklist (service vs. award vs. membership vs. leadership) -- it
+# does not affect the rendered site/CV list, which keeps this file's order.
+
+activities_associations_awards:
+  - html: "5th Biennial SIAM North Pacific Meeting – Mini-symposium organizer and poster judge, <em>Data Assimilation for Earth and Atmospheric Systems</em> (October 2025)"
+    type: service
+  - html: "Georgia Institute of Technology – Research Faculty Advisory Council Representative for the School of Earth &amp; Atmospheric Sciences (April 2025–Present)"
+    type: service
+  - html: "Vanderbilt University – Adviser &amp; Icepack Workshop and Hackathon Grand Prize Winner"
+    type: award
+  - html: "Boise State University – NSBE Public Policy SIG STEM Education, Team Co-Lead (Oct. 2021 – Oct. 2022)"
+    type: leadership
+  - html: "Boise State University – NSBE Student Chapter, President (April 2023 – April 2024)"
+    type: leadership
+  - html: "Boise State University – NSBE Student Chapter, Vice President (April 2021 – April 2023)"
+    type: leadership
+  - html: "Boise State University – SIAM Student Chapter, President (Mar. 2022 – April 2023)"
+    type: leadership
+  - html: "2023 Research Computing Days Hackathon – Organizer and Judge"
+    type: service
+  - html: "Idaho school outreach activities promoting STEM education"
+    type: service
+  - html: "Boise State University – SIAM Student Chapter, Vice President (Mar. 2021 – Mar. 2022)"
+    type: leadership
+  - html: "2021 SIAM Travel Award (AN21)"
+    type: award
+  - html: "SIAM Travel Award (GS21)"
+    type: award
+  - html: "Graduate Research Assistantship Scholarship (Ph.D.), Aug. 2020 – July 2024"
+    type: award
+  - html: "2023 Innovation Award Finalist, Promoting STEM Across Idaho"
+    type: award
+  - html: "Research Computing Days Conference – Winning Poster, <em>GPU Wave Propagation Algorithm</em>"
+    type: award
+  - html: "Association of State Floodplain Managers (ASFPM)"
+    type: membership
+  - html: "United States Research Software Engineers (US-RSE)"
+    type: membership
+  - html: "US-RSE 2023 Conference Travel Award"
+    type: award
+  - html: "AIMS Rwanda – AIMS Master&#x27;s Scholarship (M.Sc.), Aug. 2019 – July 2020"
+    type: award
+  - html: "ESMT Berlin – Team Lead (May 2020 – July 2020)"
+    type: leadership
+  - html: "Makerere University Physics Society – Vice President (April 2017 – April 2018)"
+    type: leadership
+  - html: "Government Scholarship on National Merit (B.Sc.), Aug. 2015 – May 2018"
+    type: award

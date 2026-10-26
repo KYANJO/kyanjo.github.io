@@ -1,0 +1,17 @@
+# Canonical funded-project record.
+# Edit this file when: a grant is awarded, ends, or its role/amount changes.
+# Rendered identically on the research page ("Selected funded project") and
+# in the CV ("Selected Funded Projects").
+
+funded_projects:
+  - id: arete-glacier-sliding-law
+    title: "Arête Glacier Initiative Sliding Law RFP"
+    project_title: "A Framework for Detection of Changing Subglacial Properties through Transient Data Assimilation"
+    years: "2026–2028"
+    amount_usd: 186965
+    role: Co-Investigator
+    pi: Alexander Robel
+    co_pi: Talea Mayo
+    co_investigator: Brian Kyanjo
+    description: "The project focuses on transient data assimilation for detecting changes in subglacial properties and improving constraints on future sea-level projections."
+    anchor: funded-project

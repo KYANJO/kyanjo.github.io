@@ -1,0 +1,57 @@
+name: Validate canonical data
+
+# Confirms data/*.yml and data/publications.bib are valid and that the
+# committed website/CV-source/profile output actually matches what they
+# generate -- catches "edited the data but forgot to regenerate outputs".
+#
+# Does NOT touch GitHub Pages deployment (that stays "deploy from branch",
+# unchanged) and does NOT install a LaTeX toolchain, so it can't regenerate
+# or diff-check cv/brian-kyanjo-cv.pdf -- only cv/brian-kyanjo-cv.tex and the
+# HTML/profile outputs. Rebuild and review the PDF locally after a CV data
+# change (`./.venv/bin/python scripts/build_cv.py`).
+
+on:
+  push:
+    paths:
+      - "data/**"
+      - "scripts/**"
+      - "*.html"
+      - "**/index.html"
+      - "cv/brian-kyanjo-cv.tex"
+      - "profile-setup/**"
+  pull_request:
+    paths:
+      - "data/**"
+      - "scripts/**"
+      - "*.html"
+      - "**/index.html"
+      - "cv/brian-kyanjo-cv.tex"
+      - "profile-setup/**"
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Validate canonical data
+        run: python scripts/validate_data.py
+
+      - name: Regenerate outputs (no PDF)
+        run: python scripts/build_all.py --no-pdf
+
+      - name: Fail if generated output is out of sync with committed files
+        run: |
+          git diff --exit-code -- . ':!cv/brian-kyanjo-cv.pdf' || {
+            echo "::error::Generated output differs from committed files."
+            echo "Run 'python scripts/build_all.py' locally and commit the result."
+            exit 1
+          }

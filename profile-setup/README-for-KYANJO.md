@@ -13,7 +13,8 @@ I work across scientific computing, computational mathematics, numerical modelin
 ### Scientific software
 
 - [ICESEE](https://github.com/ICESEE-project/ICESEE): MPI-parallel ensemble data assimilation for ice-sheet and geophysical models.
-- [CryoStack](https://cryostack.eas.gatech.edu/index.html) ([GitHub](https://github.com/ICESEE-project/CryoStack)): modular scientific cyberinfrastructure connecting cryosphere data, models, data assimilation, and computing environments through CryoLauncher, ICESEE, Frozen Legacies, and LIVIST.
+- [CryoStack](https://cryostack.eas.gatech.edu/) ([GitHub](https://github.com/ICESEE-project/CryoStack)): modular scientific cyberinfrastructure connecting cryosphere data, models, data assimilation, and computing environments through CryoLauncher, ICESEE, Frozen Legacies, and LIVIST.
 - [GeoFlood](https://github.com/KYANJO/GeoFlood): CPU/GPU flood modeling with finite volumes and adaptive mesh refinement.
+- [GT-DARE](https://github.com/gt-ospo/gt-dare-deploy): institutional deployment and research software engineering for DARE through Georgia Tech OSPO.
 
 [Browse my repositories →](https://github.com/KYANJO?tab=repositories) · [Website source →](https://github.com/KYANJO/kyanjo.github.io)
